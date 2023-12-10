@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "firstName": "Christopher",
+    "lastName": "Schmitt",
+    "email": "Christopher.Schmitt@dummyapis.com",
+    "contactNumber": "4094594780"
+  },
+  {
+    "id": 2,
+    "firstName": "Shelley",
+    "lastName": "Schimmel",
+    "email": "Shelley.Schimmel@dummyapis.com",
+    "contactNumber": "4502599567"
+  },
+  {
+    "id": 3,
+    "firstName": "Aglae",
+    "lastName": "Turner",
+    "email": "Aglae.Turner@dummyapis.com",
+    "contactNumber": "4721194999"
+  },
+  {
+    "id": 4,
+    "firstName": "Brent",
+    "lastName": "Gleason",
+    "email": "Brent.Gleason@dummyapis.com",
+    "contactNumber": "4223790262"
+  },
+  {
+    "id": 5,
+    "firstName": "Tracy",
+    "lastName": "Reynolds",
+    "email": "Tracy.Reynolds@dummyapis.com",
+    "contactNumber": "4478495788"
+  },
+  {
+    "id": 6,
+    "firstName": "Jefferey",
+    "lastName": "Hane",
+    "email": "Jefferey.Hane@dummyapis.com",
+    "contactNumber": "4647694357"
+  },
+  {
+    "id": 7,
+    "firstName": "Zula",
+    "lastName": "Skiles",
+    "email": "Zula.Skiles@dummyapis.com",
+    "contactNumber": "4539492372"
+  },
+  {
+    "id": 8,
+    "firstName": "Gus",
+    "lastName": "Harvey",
+    "email": "Gus.Harvey@dummyapis.com",
+    "contactNumber": "4527393986"
+  },
+  {
+    "id": 9,
+    "firstName": "Lavina",
+    "lastName": "Ward",
+    "email": "Lavina.Ward@dummyapis.com",
+    "contactNumber": "4498795927"
+  },
+  {
+    "id": 10,
+    "firstName": "Lexus",
+    "lastName": "Kunze",
+    "email": "Lexus.Kunze@dummyapis.com",
+    "contactNumber": "4636297793"
+  }
+]

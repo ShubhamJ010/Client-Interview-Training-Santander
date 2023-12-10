@@ -1,0 +1,19 @@
+.bt-green {
+  background-color: green; /* Set the background color to green */
+  color: white; /* Set the text color to white, so it's readable on the green background */
+  border: none; /* Remove the button border, adjust as needed */
+  padding: 10px 20px; /* Add padding to the button for spacing, adjust as needed */
+  cursor: pointer; /* Change the cursor to a pointer on hover for a button-like appearance */
+  border-radius: 5px; /* Optionally, round the corners of the button */
+  font-size: 0; /* Hide the text by setting font-size to zero */
+  color: transparent; /* Hide the text by setting the color to transparent */
+}
+
+.bt-red {
+  background-color: red; /* Set the background color to red */
+  color: white; /* Set the text color to white, so it's readable on the red background */
+  border: none; /* Remove the button border, adjust as needed */
+  padding: 10px 20px; /* Add padding to the button for spacing, adjust as needed */
+  cursor: pointer; /* Change the cursor to a pointer on hover for a button-like appearance */
+  border-radius: 5px; /* Optionally, round the corners of the button */
+}

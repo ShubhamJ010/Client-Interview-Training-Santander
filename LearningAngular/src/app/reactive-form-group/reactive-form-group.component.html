@@ -1,0 +1,122 @@
+<h1>reactive-form-group works!</h1>
+<h6>{{ userForm.value | json }}</h6>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="email" class="form-label">{{ el }}</label>
+          <button
+            type="button"
+            (click)="addEmail()"
+            class="btn btn-secondary mx-3 mb-3"
+          >
+            Add
+          </button>
+          <input
+            name="email"
+            #email
+            type="email"
+            class="form-control"
+            id="email"
+            formControlName="email"
+            [class.is-invalid]="
+              userForm.get('email')?.invalid && userForm.get('email')?.dirty
+            "
+            placeholder="Enter your email"
+          />
+          <!-- {{ email.className }} -->
+          <small
+            *ngIf="
+              userForm.get('email')?.hasError('emailInvalid') &&
+              userForm.get('email')?.invalid &&
+              userForm.get('email')?.dirty
+            "
+            class="text-danger"
+          >
+            Invalid Email "{{ userForm.get("email")?.value }}" format
+          </small>
+          <div formArrayName="altEmail">
+            <div *ngFor="let email of altEm.controls; let i = index">
+              <input class="form-control mt-3 mb-3" [formControlName]="i" />
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  (click)="removeEmail(i)"
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              name="email q"
+              id="emailReq"
+              formControlName="emailReq"
+              type="checkbox"
+              value="checkedValue"
+              aria-label="Text for screen reader"
+            />
+            <span *ngIf="userForm.get('emailReq')?.value == true"
+              ><strong>Need to enter an Email</strong>
+            </span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            formControlName="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="confirmPassword"
+            formControlName="confirmPassword"
+            [class.is-invalid]="userForm.errors?.['passwordMismatch']"
+            placeholder="Confirm your password"
+          />
+          <div
+            class="text-danger"
+            [hidden]="!userForm.hasError('passwordMismatch')"
+          >
+            Passwords do not match.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div *ngIf="submitted">
+  <h2>You submitted the following:</h2>
+  <div class="row">
+    <div class="col-md-2">email</div>
+    <div class="col-md-10 pull-left">{{ userData.email }}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">password</div>
+    <div class="col-md-10 pull-left">{{ userData.password }}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">confirmPassword</div>
+    <div class="col-md-10 pull-left">{{ userData.confirmPassword }}</div>
+  </div>
+  <br />
+  <div>
+    <button class="btn btn-default" (click)="submitted = false">Edit</button>
+  </div>
+</div>

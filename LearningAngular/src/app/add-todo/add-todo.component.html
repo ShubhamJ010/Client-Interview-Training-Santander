@@ -1,0 +1,32 @@
+<form [formGroup]="myform" (ngSubmit)="onSubmit()" class="row g-3">
+  <div class="col-md-6">
+    <label for="title" class="form-label">title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      name="title"
+      formControlName="title"
+      [(ngModel)]="newTodo.title"
+    />
+    <p>{{ newTodo.title }}</p>
+  </div>
+  <div class="col-md-6">
+    <label for="dec" class="form-label">Decription</label>
+    <input
+      type="text"
+      class="form-control"
+      id="dec"
+      name="dec"
+      formControlName="dec"
+      [(ngModel)]="newTodo.dec"
+    />
+    <p>{{ newTodo.dec }}</p>
+  </div>
+
+  <div class="col-12">
+    <button *ngIf="myform.valid" type="submit" class="btn btn-primary">
+      submit
+    </button>
+  </div>
+</form>

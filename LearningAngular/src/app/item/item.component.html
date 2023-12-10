@@ -1,0 +1,24 @@
+<li
+  type="circle"
+  class="list-group-item d-flex justify-content-between align-items-start"
+>
+  <b>{{ todoist.id }}.</b>
+
+  <div class="ms-2 me-auto">
+    <div class="fw-bold" *ngIf="!todoist.check">{{ todoist.title }}</div>
+    <div class="fw-bold" *ngIf="todoist.check">
+      <s>{{ todoist.title }}</s>
+    </div>
+    {{ todoist.dec }}
+  </div>
+  <span class="badge" *ngIf="!todoist.check">
+    <button (click)="deleteitem(todoist)" class="btn btn-danger">
+      ⌫
+    </button></span
+  >
+  <span class="badge" *ngIf="todoist.check">
+    <button (click)="deleteitem(todoist)" class="btn btn-success">
+      ⌫
+    </button></span
+  >
+</li>

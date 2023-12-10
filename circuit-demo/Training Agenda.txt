@@ -1,0 +1,108 @@
+Agenda:
+* Spring Batch Introduction and Archeteture 
+* Use Case
+* Basic concept (Reader,Writer, Processor, Listener)
+* Sample Job
+
+https://spring.io/projects/spring-batch
+https://docs.spring.io/spring-batch/docs/current/reference/html/domain.html
+https://docs.spring.io/spring-batch/docs/current/reference/html/domain.html#job
+https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm
+https://www.baeldung.com/cron-expressions
+
+
+* Swagger or OpenAPI Specification 
+* Add swagger to Spring boot project
+https://editor.swagger.io/?_ga=2.35352548.476987086.1694457483-489390153.1694457482
+
+
+Source - Read ( csv, excel, database)
+Process - Business Logic
+Destination - Write - DB, CSV
+
+
+Provider- UserAPI - Java-Spring
+Client - User API - Python
+
+Create and Document - 
+Consuming a API -
+
+Practice - 
+
+Microservice Code ( Create a project)
+Unit Test - TDD (Test Driven Development) Junit, Mocito
+Code ( Enable Swagger) 
+	- SOLID PRINCIPLE
+	- DRY - (Do repeat yourself)
+	- KISS (Keep it simple stupid)
+	- SAST (sonar qube, Dependecy check) and DAST 
+
+Integration Test - MockMVC, WireMock, H2 Databse, SpringTest
+Swagger Yaml ( for client , gateway)
+E2E Test ( BDD, given ,when and then)/Cucumber/Postman
+Deploy the application 
+ - Git (commands, merge request and webhook)
+ - Jenkins pipeline (overview) build , test and SAST ( sonar, dependency check), 
+ - Docker (docker, how to containerize your code)
+ - Kuberneties (why ?)
+
+Process 
+ - Agile ( SCRUM, Kanban) - JIRA, Confluence
+
+
+Next Session -
+
+Microservice vs Monoliths
+Microservice Design Pattern
+	* Retry - 
+	* Circuit Breaker Pattern - 
+	* Rate limiting 
+	* Bulkhead
+	* How to create fault tolerant API ?
+
+
+User Service - Details of user - Oracle DB, LDAP
+Task Service - Detail of task - create a task ( task id , type of task , sla , user assigned) - Postgres DB
+Auth Service 
+
+UserService - 
+
+Benifit -
+Comminication b/w module 
+
+
+Cons
+Difficult to maintain
+Consuming more resources
+
+user-service, auth-service
+task-service
+
+	- Async- Message broker, kafka, rabbit mq
+	- Sync - Http based ( rest template , web client, Open Feign)
+
+
+https://resilience4j.readme.io/docs/getting-started-3
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

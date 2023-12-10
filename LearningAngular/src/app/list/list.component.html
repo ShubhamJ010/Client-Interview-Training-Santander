@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="my-3">
+    <app-add-todo (newTodoSend)="addTodo($event)"></app-add-todo>
+  </div>
+  <div class="my-2">
+    <ul
+      class="list-group list-group-numbered"
+      *ngFor="let t of todoist"
+      type="circle"
+    >
+      <app-item [todoist]="t" (eventName)="deteletodo($event)"></app-item>
+    </ul>
+  </div>
+</div>
